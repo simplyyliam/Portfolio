@@ -12,7 +12,7 @@
   }
 
 .Hero {
-    background-image: url("assets/images/hero2.png");
+    background-image: url("/assets/images/hero2.png");
     background-position: center;
     background-size: cover;
 }
