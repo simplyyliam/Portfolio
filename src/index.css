@@ -1,0 +1,18 @@
+@import "tailwindcss";
+ 
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+
+@layer utilities {
+    .font-lora {
+      font-family: 'Lora', serif;
+    }
+  }
+
+.Hero {
+    background-image: url("assets/images/hero2.png");
+    background-position: center;
+    background-size: cover;
+}
