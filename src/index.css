@@ -16,3 +16,8 @@
     background-position: center;
     background-size: cover;
 }
+
+.imageSRC {
+  background-size: cover;
+  background-position: center;
+}
