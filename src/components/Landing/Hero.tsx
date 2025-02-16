@@ -44,7 +44,7 @@ export function Landing_Hero () {
         <div ref={HeroRef} className="Hero flex w-full h-full bg-stone-300 p-5 absolute">
             <div className="flex items-center justify-center w-full h-full  bg-[#ffffff1] backdrop-blur-[5px]">
                 <div className="flex flex-col gap-6">
-                    <h1 ref={HeaderRef} className="text-white md:text-3xl  md:w-fit text-[0.5em] text-center  font-medium scale-0">Frontend Developer Building, One Pixel at a Time</h1>
+                    <h1 ref={HeaderRef} className="text-white md:text-3xl  md:w-fit text-[0.65em] text-center  font-medium scale-0">Frontend Developer Building, One Pixel at a Time</h1>
                 </div>
             </div>
         </div>
