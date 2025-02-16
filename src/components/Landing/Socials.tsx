@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 export const Socials = forwardRef<HTMLDivElement>(({}, ref) => {
     return (
-        <div ref={ref} className="flex w-auto p-4 items-center justify-center gap-4 rounded-4xl absolute top-full md:right-[42%] right-[6em] ">
+        <div ref={ref} className="flex w-auto p-4 items-center justify-center gap-4 rounded-4xl absolute top-full md:right-[42%] sm:right-[6em] right-11 ">
       <NavLink to='https://www.youtube.com/@simplyliamcodes' className="flex items-center justify-center w-12 h-12 bg-[#ffffff35] rounded-full hover:-translate-y-1 transition ease-linear">
         <svg
           width="24"
