@@ -1,9 +1,11 @@
 import gsap from 'gsap';
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef} from 'react';
+import { Socials } from './Socials';
 export function Landing_Hero () {
 
     const HeroRef = useRef(null)
     const HeaderRef = useRef(null)
+    const SocialsRef = useRef(null)
 
     gsap.registerPlugin(gsap)
 
@@ -35,18 +37,24 @@ export function Landing_Hero () {
                 ease: "elastic.out(1, 0.75)", // Elastic effect for scaling
             }) 
         })
+
+        gsap.to(SocialsRef.current, {y: -100, delay: 0.5})
     })
-    
+
+
+
+    const container = useRef(null)
 
     
 
     return (
         <div ref={HeroRef} className="Hero flex w-full h-full bg-stone-300 p-5 absolute">
-            <div className="flex items-center justify-center w-full h-full  bg-[#ffffff1] backdrop-blur-[5px]">
+            <div ref={container} className="flex items-center justify-center w-full h-full  bg-[#ffffff1] backdrop-blur-[5px]">
                 <div className="flex flex-col gap-6">
                     <h1 ref={HeaderRef} className="text-white md:text-3xl  md:w-fit text-[0.65em] text-center  font-medium scale-0">Frontend Developer Building, One Pixel at a Time</h1>
                 </div>
             </div>
+            <Socials ref={SocialsRef}/>
         </div>
     )
 }

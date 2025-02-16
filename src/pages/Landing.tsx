@@ -6,7 +6,7 @@ import { Projects } from "./Projects";
 export function Landing () {
     return (
         <>
-            <section className="flex flex-col items-center justify-center w-screen h-screen md:sm:p-20">
+            <section className="flex flex-col items-center justify-center w-screen h-screen">
                 <Landing_Hero/>
             </section>
 

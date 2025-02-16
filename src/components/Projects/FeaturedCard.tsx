@@ -11,10 +11,10 @@ export const FeaturedCards = forwardRef<HTMLDivElement, Props>(
     return (
       <section
         ref={ref}
-        className={` w-[46em] h-[30em] rounded-xl overflow-hidden`}
+        className={` w-[46em] rounded-xl overflow-hidden`}
       >
         <NavLink to={to}>
-           <img className="imageSRC" src={imageSRC} alt="" />
+           <img src={imageSRC} alt="" />
         </NavLink>
       </section>
     );
